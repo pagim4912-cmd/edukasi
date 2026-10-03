@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ruang Edukasi</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar" id="sidebar">
+
+    <h2>Ruang Edukasi</h2>
+
+    <button onclick="toggleDarkMode()">
+      🌙 Mode Gelap
+    </button>
+
+    <button onclick="showHome()">
+      🏠 Home
+    </button>
+
+    <button onclick="showAllArticles()">
+      📚 Semua Artikel
+    </button>
+    
+  </aside>
+
+
+  <!-- LATAR SIDEBAR -->
+
+  <div
+    class="overlay"
+    id="overlay"
+    onclick="closeSidebar()">
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <button
+      class="menu-btn"
+      onclick="openSidebar()">
+      ☰
+    </button>
+
+    <div class="logo">
+      Ruang Edukasi
+    </div>
+
+  </header>
+
+
+  <!-- ISI WEBSITE -->
+
+  <main>
+
+    <!-- HOME -->
+
+    <section id="homePage">
+
+      <div class="hero">
+
+        <h1>
+          Bebas dari Label : Lawan Stereotip dan Toxic Masculinity
+         <br>
+          
+        </h1>
+
+        <p>
+         Ketika anggapan masyarakat membentuk cara kita melihat diri sendiri
+           "Cowok gak boleh cengeng."
+         "Cowok harus kuat."
+           "Cewek ga jago matematika."
+           "Anak IPS nakal-nakal!"
+          Kalimat tersebut sering kita jumpai di kehidupan sehari-hari. Mungkin terdengar sederhana namun, di baliknya terdapat anggapan dan prasangka mengenai bagaimana seseorang seharusnya bersikap berdasarkan kelompok yang dianggap melekat pada dirinya.
+          Anggapan yang digeneralisasikan terhadap suatu kelompok disebut stereotip. Hal ini dapat muncul dalam berbagai bentuk, mulai dari gender, ras/etnis, status sosial ekonomi, pekerjaan, disabilitas hingga agama. 
+           Ketika suatu anggapan dan prasangka terus diulang dan dianggap sesuatu yang normal, anggapan tersebut dapat membentuk ekspektasi sosial mengenai bagaimana seseorang seharusnya berpikir, bersikap dan bertindakSalah satu contohnya dapat kita lihat dalam kehidupan sehari-hari dari tuntutan terhadap laki-laki untuk selalu kuat, mandiri, tidak menunjukkan emosi, atau tidak meminta bantuan. Terkadang ketika seorang laki-laki keluar dari "kotak" tersebut, tak jarang masyarakat memandangnya dengan cara berbeda, bahkan melabelinya dengan hal-hal yang negatif. Ketika tuntutan tersebut menjadi sangat kamu dan memberikan dampak yang merugikan, kita mulai memasuki pembahasan tentang        maskulinitas toksik.
+           <p> 
+<tag>
+  <!--Tab to edit-->
+</tag>
+          
+        </p>
+
+      </div>
+
+
+      <!-- PENCARIAN -->
+
+      <div class="search-box">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Cari artikel..."
+          oninput="searchArticles()">
+
+      </div>
+
+
+      <h2 class="section-title">
+        Artikel
+      </h2>
+
+
+      <!-- DAFTAR ARTIKEL -->
+
+      <div
+        class="articles"
+        id="articleList">
+
+        <!-- Artikel dibuat oleh JavaScript -->
+
+      </div>
+
+    </section>
+    
+ <section id="sources" style="display:none;">
+    <!-- HALAMAN ARTIKEL -->
+
+    <section
+      class="article-page"
+      id="articlePage">
+
+      <button
+        class="back"
+        onclick="showHome()">
+        ← Kembali
+      </button>
+
+      <span
+        class="tag"
+        id="articleCategory">
+      </span>
+
+      <h1 id="articleTitle"></h1>
+
+      <div
+        class="article-content"
+        id="articleContent">
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
